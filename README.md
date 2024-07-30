@@ -39,7 +39,7 @@ Após instalado, execute o seguinte comando:
 
 Após executar o comando, o arquivo *appanalytics_pb2.py* será criado na raiz do projeto.
 
-O comando anterior teve o argumento -I omitido, porque por padrâo aponta para o diretório atual. O argumento --python_out também aponta para o diretório atual com o valor '.'.
+O comando anterior teve o argumento *-I* omitido, porque por padrâo aponta para o diretório atual. O argumento *--python_out* também aponta para o diretório atual com o valor '.'.
 
 O arquivo appanalytics.proto é o arquivo presente na raiz do projeto (diretório atual).
 
@@ -49,7 +49,7 @@ Com o ambiente virtual ativo e as dependências instaladas, você é capaz de ut
 
 Excute o comando:
 
-> `mitmdump -s decode-protobuf.py`
+> `mitmdump -s decode_protobuf.py`
 
 ### Links úteis:
 
