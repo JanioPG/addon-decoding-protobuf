@@ -1,9 +1,9 @@
 
-# Addon (mitmproxy): Protobuf for Google Analytics 4
+# Addon (mitmproxy): Protobuf decoder for Google Analytics 4
 
 ### Feature: decodificar o binário protobuf enviado numa request para o endpoint do Google Analtyics 4.
 
-[![Decoding Protobuf](/assets/images/ga4_requests.jpg "GA4 Requests")](https://drive.google.com/thumbnail?id=1CTREP-b2s0EA9IFtMcVT3uxirjAa18D2&sz=w700)
+![Decoding Protobuf](https://drive.google.com/uc?id=1CTREP-b2s0EA9IFtMcVT3uxirjAa18D2&sz=w700)
 
 ---
 
