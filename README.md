@@ -3,7 +3,7 @@
 
 ### Feature: decodificar o binário protobuf enviado numa request para o endpoint do Google Analtyics 4.
 
-![Decoding Protobuf](https://drive.google.com/uc?id=1CTREP-b2s0EA9IFtMcVT3uxirjAa18D2&sz=w700)
+![Decoding Protobuf](https://drive.google.com/uc?id=1P6Flic105VVGMGPnLuvfF0jFLzDsvNGT)
 
 ---
 
@@ -29,20 +29,6 @@ Com o ambiente virtual ativo, instale as dependências com o comando:
 
 > `pip install -r requirements.txt`
 
-### Protocol Buffer Compiler
-
-Acesse a página do [Protocol Buffer Compiler](https://grpc.io/docs/protoc-installation/) e siga as orientações para baixar a versâo mais recente, a partir da v27.2.
-
-Após instalado, execute o seguinte comando:
-
-> `protoc --python_out=. appanalytics.proto`
-
-Após executar o comando, o arquivo *appanalytics_pb2.py* será criado na raiz do projeto.
-
-O comando anterior teve o argumento *-I* omitido, porque por padrâo aponta para o diretório atual. O argumento *--python_out* também aponta para o diretório atual com o valor '.'.
-
-O arquivo appanalytics.proto é o arquivo presente na raiz do projeto (diretório atual).
-
 ## Como utilizar:
 
 Com o ambiente virtual ativo e as dependências instaladas, você é capaz de utilizar o mitmproxy (dump) executando o script *decode_protobuf.py*.
@@ -50,6 +36,23 @@ Com o ambiente virtual ativo e as dependências instaladas, você é capaz de ut
 Excute o comando:
 
 > `mitmdump -s decode_protobuf.py`
+
+### Protocol Buffer Compiler [Optional]:
+Faça este procedimento caso queira inserir ou atualizar campos para decode em *appanalytics.proto*.
+
+Após editar/atualizar o arquivo *appanalytics.proto*, exclua o arquivo *appanalytics_pb2.py*.
+
+Acesse a página do [Protocol Buffer Compiler](https://grpc.io/docs/protoc-installation/) e siga as orientações para baixar a versâo mais recente, a partir da v27.2.
+
+Após instalado, execute o seguinte comando:
+
+> `protoc --python_out=. appanalytics.proto`
+
+Após executar o comando, o arquivo *appanalytics_pb2.py* será criado novamente na raiz do projeto.
+
+O comando anterior teve o argumento *-I* omitido, porque por padrâo aponta para o diretório atual. O argumento *--python_out* também aponta para o diretório atual com o valor '.'.
+
+O arquivo appanalytics.proto é o arquivo presente na raiz do projeto (diretório atual).
 
 ### Links úteis:
 
