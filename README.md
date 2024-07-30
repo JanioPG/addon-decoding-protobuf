@@ -2,6 +2,8 @@
 # Addon (mitmproxy): Protobuf for Google Analytics 4
 
 ### Feature: decodificar o binário protobuf enviado numa request para o endpoint do Google Analtyics 4.
+
+[![An old rock in the desert]](https://drive.google.com/thumbnail?id=1CTREP-b2s0EA9IFtMcVT3uxirjAa18D2&sz=w700)
 ---
 
 ## Dependências:
@@ -9,9 +11,9 @@
 - [mitmproxy](https://mitmproxy.org/)
 - [python 3.12](https://www.python.org/)
 - 
-## Instalation:
+## Instalação:
 Todos os comandos a seguir devem ser executados na raiz do projeto.
-### Ambiente virtual e dependências:
+### Ambiente virtual e dependências
 Clone o repositório e, preferencialmente, crie um ambiente virtual.
 Para isso, execute no terminal o comando:
 `python -m venv venv`
@@ -28,12 +30,12 @@ Após executar o comando, o arquivo *appanalytics_pb2.py* será criado na raiz d
 O comando anterior teve o argumento -I omitido, porque por padrâo aponta para o diretório atual. O argumento --python_out também aponta para o diretório atual com o valor '.'.
 O arquivo appanalytics.proto é o arquivo presente na raiz do projeto (diretório atual).
 
-## Como utilizar
+## Como utilizar:
 Com o ambiente virtual ativo e as dependências instaladas, você é capaz de utilizar o mitmproxy (dump) executando o script *decode_protobuf.py*.
 Excute o comando:
 `mitmdump -s decode-protobuf.py`
 
-###Links úteis:
+### Links úteis:
 - [Protocol Buffers Documentation](https://protobuf.dev/): Protocol Buffers are language-neutral, platform-neutral extensible mechanisms for serializing structured data.
 - [GA4 Recommended events](https://developers.google.com/analytics/devguides/collection/ga4/reference/events?client_type=gtag): description of GA4 events and parameters.
 
