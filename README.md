@@ -31,11 +31,23 @@ Com o ambiente virtual ativo, instale as dependências com o comando:
 
 ## Como utilizar:
 
-Com o ambiente virtual ativo e as dependências instaladas, você é capaz de utilizar o mitmproxy (dump) executando o script *decode_protobuf.py*.
+Com o ambiente virtual ativo e as dependências instaladas, você é capaz de utilizar o mitmproxy executando o script *decode_protobuf.py*.
 
-Excute o comando:
+Execute um dos comandos abaixo de acordo com o front-end de sua preferência:
+
+**mitmproxy* is an interactive, SSL/TLS-capable intercepting proxy with a console interface for HTTP/1, HTTP/2, and WebSockets.
+
+> `mitmdproxy -s decode_protobuf.py`
+
+**mitmweb** is a web-based interface for mitmproxy.
+
+> `mitmweb -s decode_protobuf.py`
+
+**mitmdump** is the command-line version of mitmproxy. Think tcpdump for HTTP.
 
 > `mitmdump -s decode_protobuf.py`
+
+---
 
 ### Protocol Buffer Compiler [Optional]:
 Faça este procedimento caso queira inserir ou atualizar campos para decode em *appanalytics.proto*.
