@@ -35,7 +35,7 @@ Com o ambiente virtual ativo e as dependências instaladas, você é capaz de ut
 
 Execute um dos comandos abaixo de acordo com o front-end de sua preferência:
 
-**mitmproxy* is an interactive, SSL/TLS-capable intercepting proxy with a console interface for HTTP/1, HTTP/2, and WebSockets.
+**mitmproxy** is an interactive, SSL/TLS-capable intercepting proxy with a console interface for HTTP/1, HTTP/2, and WebSockets.
 
 > `mitmdproxy -s decode_protobuf.py`
 
