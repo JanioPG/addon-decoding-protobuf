@@ -23,7 +23,7 @@ message Bundle {
             string string_value = 2;
             int64 int_value = 3;
             fixed64 double_value = 5;
-            Param param = 6;
+            repeated Param param = 6;
         }
 
         repeated EventParameter param = 1;
